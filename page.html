@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>GA account: {{.Account}}</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -12,9 +13,9 @@
 
   ga('create', '{{.Account}}', 'github-ga-beacon.appspot.com');
   ga('send', 'pageview');
-  </script>
-  <script type="text/javascript">
-if (typeof jQuery != 'undefined') {
+  
+  
+  if (typeof jQuery != 'undefined') {
   jQuery(document).ready(function($) {
     var filetypes = /\.(zip|exe|dmg|pdf|doc.*|xls.*|ppt.*|mp3|txt|rar|wma|mov|avi|wmv|flv|wav)$/i;
     var baseHref = '';
@@ -66,7 +67,10 @@ if (typeof jQuery != 'undefined') {
     });
   });
 }
-</script>
+  
+  
+  </script>
+
 </head>
 
 <body>
